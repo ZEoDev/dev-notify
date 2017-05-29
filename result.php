@@ -2,8 +2,9 @@
 <body>
 
 <button onclick="history.go(-1);">Back </button>
-
-Hello <?php echo $_POST["name"]; ?>! 
+<br>
+<?php echo $_POST["name"]; ?>! 
+<br>
 <br>
 
 <?php 
@@ -28,7 +29,8 @@ curl_setopt( $chOne, CURLOPT_POSTFIELDS, "message=".$_POST["name"]);
 curl_setopt( $chOne, CURLOPT_FOLLOWLOCATION, 1); 
 
 //ADD header array 
-$headers = array( 'Content-type: application/x-www-form-urlencoded', 'Authorization: Bearer VdyTAIdviDk5Wg4titlYb8BV5ATiEzptHlH46lLFPKo', ); 
+//$headers = array( 'Content-type: application/x-www-form-urlencoded', 'Authorization: Bearer VdyTAIdviDk5Wg4titlYb8BV5ATiEzptHlH46lLFPKo', ); 
+$headers = array( 'Content-type: application/x-www-form-urlencoded', 'Authorization: Bearer U1m2FrPa2VEjaCpcU2SN1SuFEpFj0PVmvFwce1ldBws', ); 
 curl_setopt($chOne, CURLOPT_HTTPHEADER, $headers); 
 
 //RETURN 
