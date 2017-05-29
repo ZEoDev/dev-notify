@@ -3,7 +3,7 @@
 
 <form action="result.php" method="post">
 Name: <input type="text" name="name">
-<input type="submit">
+<input type="submit" value="Send">
 </form>
 
 </body>
