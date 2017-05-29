@@ -1,7 +1,10 @@
 <html>
 <body>
 
-Hello <?php echo $_POST["name"]; ?>!
+<button onclick="history.go(-1);">Back </button>
+
+Hello <?php echo $_POST["name"]; ?>! 
+<br>
 
 <?php 
 
