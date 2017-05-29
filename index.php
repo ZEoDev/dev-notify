@@ -20,7 +20,7 @@ curl_setopt( $chOne, CURLOPT_POSTFIELDS, "message=สวัสดี");
 curl_setopt( $chOne, CURLOPT_FOLLOWLOCATION, 1); 
 
 //ADD header array 
-$headers = array( 'Content-type: application/x-www-form-urlencoded', 'Authorization: Bearer Un2LudBajEKlJs8I7qbWIMkl3f2WjGH56Yxxx9yU9zT', ); 
+$headers = array( 'Content-type: application/x-www-form-urlencoded', 'Authorization: Bearer VdyTAIdviDk5Wg4titlYb8BV5ATiEzptHlH46lLFPKo', ); 
 curl_setopt($chOne, CURLOPT_HTTPHEADER, $headers); 
 
 //RETURN 
