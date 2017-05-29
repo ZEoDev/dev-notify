@@ -33,7 +33,9 @@ if(curl_error($chOne)) {
 } 
 else { 
   $result_ = json_decode($result, true); 
-  echo "status : ".$result_['status']; echo "message : ". $result_['message']; 
+  echo "status : ".$result_['status']; 
+  echo ", ";
+  echo "message : ".$result_['message']; 
 } 
 
 //Close connect 
