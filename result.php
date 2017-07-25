@@ -30,7 +30,8 @@ curl_setopt( $chOne, CURLOPT_FOLLOWLOCATION, 1);
 
 //ADD header array 
 //$headers = array( 'Content-type: application/x-www-form-urlencoded', 'Authorization: Bearer VdyTAIdviDk5Wg4titlYb8BV5ATiEzptHlH46lLFPKo', ); 
-$headers = array( 'Content-type: application/x-www-form-urlencoded', 'Authorization: Bearer U1m2FrPa2VEjaCpcU2SN1SuFEpFj0PVmvFwce1ldBws', ); 
+//$headers = array( 'Content-type: application/x-www-form-urlencoded', 'Authorization: Bearer U1m2FrPa2VEjaCpcU2SN1SuFEpFj0PVmvFwce1ldBws', ); 
+$headers = array( 'Content-type: application/x-www-form-urlencoded', 'Authorization: Bearer yr13UxwPSWyHyKW0uM2YlG7fH3cdWbfD3pAVqZuJINc', ); 
 curl_setopt($chOne, CURLOPT_HTTPHEADER, $headers); 
 
 //RETURN 
