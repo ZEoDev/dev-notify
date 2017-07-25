@@ -1,8 +1,6 @@
 <?php 
 
-$parts = parse_url($url);
-parse_str($parts['query'], $query);
-echo $query['token'];
+echo "token : ".$_GET["token"];
 
 $chOne = curl_init(); 
 curl_setopt( $chOne, CURLOPT_URL, "https://notify-api.line.me/api/notify"); 
