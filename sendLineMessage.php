@@ -1,5 +1,5 @@
 <?php 
-//https://dev-notify.herokuapp.com/sendLineMessage.php?token=yr13UxwPSWyHyKW0uM2YlG7fH3cdWbfD3pAVqZuJINc&message=%E0%B8%AA%E0%B9%88%E0%B8%87%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%99%20%E0%B8%AA%E0%B8%99%E0%B8%B8%E0%B8%81%E0%B8%94%E0%B8%B5
+//https://dev-notify.herokuapp.com/sendLineMessage.php?token=yr13UxwPSWyHyKW0uM2YlG7fH3cdWbfD3pAVqZuJINc&message=TestSendMessage
 
 echo "token : ".$_GET["token"];
 echo ", ";
@@ -21,9 +21,6 @@ curl_setopt( $chOne, CURLOPT_POSTFIELDS, "message=".$_GET["message"]);
 
 //ถ้าต้องการใส่รุป ให้ใส่ 2 parameter imageThumbnail และimageFullsize
 //curl_setopt( $chOne, CURLOPT_POSTFIELDS, "message=hi&imageThumbnail=http://www.wisadev.com/wp-content/uploads/2016/08/cropped-wisadevLogo.png&imageFullsize=http://www.wisadev.com/wp-content/uploads/2016/08/cropped-wisadevLogo.png"); 
-
-curl_setopt( $chOne, CURLOPT_POSTFIELDS, "message=hi&imageThumbnail=http://www.healthcarethai.com/wp-content/uploads/%E0%B8%84%E0%B8%B3%E0%B8%99%E0%B8%A7%E0%B8%99%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B1%E0%B8%A7.png&imageFullsize=http://www.healthcarethai.com/wp-content/uploads/%E0%B8%84%E0%B8%B3%E0%B8%99%E0%B8%A7%E0%B8%99%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B1%E0%B8%A7.png"); 
-
 
 // follow redirects 
 curl_setopt( $chOne, CURLOPT_FOLLOWLOCATION, 1); 
