@@ -3,7 +3,7 @@
 echo "token : ".$_GET["token"];
 echo ", ";
 echo "message : ".$_GET["message"];
-echo ", ";
+echo ", </br>";
 
 $chOne = curl_init(); 
 curl_setopt( $chOne, CURLOPT_URL, "https://notify-api.line.me/api/notify"); 
@@ -25,7 +25,6 @@ curl_setopt( $chOne, CURLOPT_POSTFIELDS, "message=".$_GET["message"]);
 curl_setopt( $chOne, CURLOPT_FOLLOWLOCATION, 1); 
 
 //ADD header array 
-//$headers = array( 'Content-type: application/x-www-form-urlencoded', 'Authorization: Bearer VdyTAIdviDk5Wg4titlYb8BV5ATiEzptHlH46lLFPKo', ); 
 $headers = array( 'Content-type: application/x-www-form-urlencoded', 'Authorization: Bearer '.$_GET["token"], ); 
 curl_setopt($chOne, CURLOPT_HTTPHEADER, $headers); 
 
