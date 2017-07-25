@@ -1,6 +1,9 @@
 <?php 
 
 echo "token : ".$_GET["token"];
+echo ", ";
+echo "message : ".$_GET["message"];
+echo ", ";
 
 $chOne = curl_init(); 
 curl_setopt( $chOne, CURLOPT_URL, "https://notify-api.line.me/api/notify"); 
@@ -13,7 +16,7 @@ curl_setopt( $chOne, CURLOPT_SSL_VERIFYPEER, 0);
 curl_setopt( $chOne, CURLOPT_POST, 1); 
 
 // Message 
-curl_setopt( $chOne, CURLOPT_POSTFIELDS, "message=สวัสดี"); 
+curl_setopt( $chOne, CURLOPT_POSTFIELDS, "message=".$_GET["message"]); 
 
 //ถ้าต้องการใส่รุป ให้ใส่ 2 parameter imageThumbnail และimageFullsize
 //curl_setopt( $chOne, CURLOPT_POSTFIELDS, "message=hi&imageThumbnail=http://www.wisadev.com/wp-content/uploads/2016/08/cropped-wisadevLogo.png&imageFullsize=http://www.wisadev.com/wp-content/uploads/2016/08/cropped-wisadevLogo.png"); 
@@ -23,7 +26,7 @@ curl_setopt( $chOne, CURLOPT_FOLLOWLOCATION, 1);
 
 //ADD header array 
 $headers = array( 'Content-type: application/x-www-form-urlencoded', 'Authorization: Bearer VdyTAIdviDk5Wg4titlYb8BV5ATiEzptHlH46lLFPKo', ); 
-//$headers = array( 'Content-type: application/x-www-form-urlencoded', 'Authorization: Bearer yr13UxwPSWyHyKW0uM2YlG7fH3cdWbfD3pAVqZuJINc', ); 
+//$headers = array( 'Content-type: application/x-www-form-urlencoded', 'Authorization: Bearer $_GET["token"]', ); 
 curl_setopt($chOne, CURLOPT_HTTPHEADER, $headers); 
 
 //RETURN 
